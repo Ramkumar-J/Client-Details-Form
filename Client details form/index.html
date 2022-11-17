@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Client Details Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <main class="client-details">
+        <div class="form-header">
+            <h1 class="form-title">Client Details</h1>
+            <h3 class="form-info">Enter the details of all incoming clients.</h3>
+        </div>
+        <form action="" class="client-form">
+           
+            <label for="name" class="form-lable">Client Name<em style="color: red;">*</em></label>
+            <input type="text" id="name" name="clientname" class="form-field">
+        
+        
+            <label for="company" class="form-lable">Company<em style="color: red;">*</em></label>
+            <input type="text" id="company" name="company" class="form-field">
+       
+        
+            <label for="title" class="form-lable">Title</label>
+            <input type="text" id="title" name="title" class="form-field">
+        
+            <label for="department" class="form-lable">Department<em style="color: red;">*</em></label>
+            <select type="text" id="department" name="department" class="form-field">
+                <option value="--select--" disabled selected>--select--</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Electronics">Electronics</option>
+            </select>
+        
+       
+            <label for="contactmethod" class="form-lable">Preferred contact method<em style="color: red;">*</em></label>
+            <input type="radio" id="contactemail" name="contact">
+            <label for="contactemail">Email</label>
+            <input type="radio" id="contactphone" name="contact">
+            <label for="contactphone">Phone</label><br>
+        
+       
+            <label for="email" class="form-lable">Email</label>
+            <input type="email" id="email" name="email" class="form-field">
+       
+            <label for="phone" class="form-lable">Phone</label>
+            <input type="tel" id="phone" name="phone" class="form-field">
+        
+            <label for="companyaddress" class="form-lable">Company address<em style="color: red;">*</em></label>
+            <!-- <div class="str"> -->
+            <input type="text" id="street" name="street" class="form-field">
+            <!-- <label for="street" class="form-lable">Street Address</label>
+        </div> -->
+        <!-- <div class="str1">
+            <input type="text" id="address" name="street" class="form-field"><br>
+            <label for="street" class="form-lable">Address Line 2</label>
+        </div>
+            <div class="row">
+            <div col="6">
+            <input type="text" id="city" name="city"  class="address-input"><br>
+            <label for="city" class="form-lable">City</label>
+        </div>
+        
+        <div col="6">
+            <input type="text" id="state" name="state" class="address-input"><br>
+            <label for="state" class="form-lable">State/Region/Province</label><br>
+        </div>
+    </div>
+    <div class="row">
+        <div col="6">
+            <input type="text" id="pincode" name="pincode"  class="address-input"><br>
+            <label for="pincode" class="form-lable">Postal / Zip Code</label><br>
+        </div>
+        <div col="6">
+            <select type="text" id="country" name="country"  class="address-input">
+                <option value="--select--" disabled selected>--select--</option>
+                <option value="India">Information Technology</option>
+                <option value="USA">Electrical</option>
+                <option value="UK">Electrical</option>
+                <option value="China">Electronics</option>
+                <option value="Japan">Electrical</option>
+            </select><br>
+            <label for="country" class="form-lable">Country</label>
+        </div>
+        </div> -->
+      
+            <label for="website" class="form-lable">Company website<em style="color: red;">*</em></label>
+            <input type="url" id="website" name="website" class="form-field">
+       
+            <label for="logo" class="form-lable">Company logo</label>
+            <input type="file" id="logo" name="logo" accept="image/*" class="form-field">
+       
+            <label for="workhours" class="form-lable">Working Hours<em style="color: red;">*</em></label>
+            <input type="number" id="workhours" name="workhours" class="form-field">
+        
+            <label for="workdays" class="form-lable">Working Days<em style="color: red;">*</em></label>
+            <input type="text" id="workdays" name="workdays" class="form-field">
+        
+            <label for="billing" class="form-lable">Billing Cycle<em style="color: red;">*</em></label>
+            <input type="text" id="billing" name="billing" class="form-field">
+        
+            <label for="additionalinfo" class="form-lable">Additional Information<em style="color: red;">*</em></label>
+            <textarea name="additionalinfo" id="additionalinfo" rows="4" cols="45"></textarea>
+        </div>
+        <div class="submit-btn">
+        <input type="submit" value="Submit">
+        </div>
+        </form>
+       </main>
+    </body>
+</html>
