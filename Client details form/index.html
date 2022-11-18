@@ -11,23 +11,23 @@
        <main class="client-details">
         <div class="form-header">
             <h1 class="form-title">Client Details</h1>
-            <h3 class="form-info">Enter the details of all incoming clients.</h3>
+            <p class="form-about">Enter the details of all incoming clients.</p>
         </div>
-        <form action="" class="client-form">
-           
+        <form  class="client-form">
+        
             <label for="name" class="form-lable">Client Name<em style="color: red;">*</em></label>
-            <input type="text" id="name" name="clientname" class="form-field">
+            <input type="text" id="name" name="clientname" class="form-field" required>
         
         
             <label for="company" class="form-lable">Company<em style="color: red;">*</em></label>
-            <input type="text" id="company" name="company" class="form-field">
+            <input type="text" id="company" name="company" class="form-field" required>
        
         
             <label for="title" class="form-lable">Title</label>
             <input type="text" id="title" name="title" class="form-field">
         
             <label for="department" class="form-lable">Department<em style="color: red;">*</em></label>
-            <select type="text" id="department" name="department" class="form-field">
+            <select type="text" id="department" name="department" class="form-field" required>
                 <option value="--select--" disabled selected>--select--</option>
                 <option value="Information Technology">Information Technology</option>
                 <option value="Electrical">Electrical</option>
@@ -36,11 +36,12 @@
         
        
             <label for="contactmethod" class="form-lable">Preferred contact method<em style="color: red;">*</em></label>
-            <input type="radio" id="contactemail" name="contact">
-            <label for="contactemail">Email</label>
-            <input type="radio" id="contactphone" name="contact">
-            <label for="contactphone">Phone</label><br>
-        
+            <div class="form-radio">
+            <input type="radio" id="contactemail" name="contact" required>
+            <label for="contactemail" class="radio-lable">Email</label>
+            <input type="radio" id="contactphone" name="contact" required>
+            <label for="contactphone" class="radio-lable">Phone</label><br>
+        </div>
        
             <label for="email" class="form-lable">Email</label>
             <input type="email" id="email" name="email" class="form-field">
@@ -50,7 +51,7 @@
         
             <label for="companyaddress" class="form-lable">Company address<em style="color: red;">*</em></label>
             <!-- <div class="str"> -->
-            <input type="text" id="street" name="street" class="form-field">
+            <input type="text" id="street" name="street" class="form-field" required>
             <!-- <label for="street" class="form-lable">Street Address</label>
         </div> -->
         <!-- <div class="str1">
@@ -87,22 +88,22 @@
         </div> -->
       
             <label for="website" class="form-lable">Company website<em style="color: red;">*</em></label>
-            <input type="url" id="website" name="website" class="form-field">
+            <input type="url" id="website" name="website" class="form-field" required>
        
             <label for="logo" class="form-lable">Company logo</label>
             <input type="file" id="logo" name="logo" accept="image/*" class="form-field">
        
             <label for="workhours" class="form-lable">Working Hours<em style="color: red;">*</em></label>
-            <input type="number" id="workhours" name="workhours" class="form-field">
+            <input type="number" id="workhours" name="workhours" class="form-field" required>
         
             <label for="workdays" class="form-lable">Working Days<em style="color: red;">*</em></label>
-            <input type="text" id="workdays" name="workdays" class="form-field">
+            <input type="text" id="workdays" name="workdays" class="form-field" required>
         
             <label for="billing" class="form-lable">Billing Cycle<em style="color: red;">*</em></label>
-            <input type="text" id="billing" name="billing" class="form-field">
+            <input type="text" id="billing" name="billing" class="form-field" required>
         
-            <label for="additionalinfo" class="form-lable">Additional Information<em style="color: red;">*</em></label>
-            <textarea name="additionalinfo" id="additionalinfo" rows="4" cols="45"></textarea>
+            <label for="additionalinfo" class="form-lable">Additional Information</label>
+            <textarea name="additionalinfo" id="additionalinfo" ></textarea>
         </div>
         <div class="submit-btn">
         <input type="submit" value="Submit">
